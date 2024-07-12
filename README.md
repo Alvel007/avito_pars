@@ -17,12 +17,12 @@
 
 ## Использование
 1. Установите скрипт себе на ПК.  
-'git clone git@github.com:<ВАШ_GITHUB>/avito_pars.git'
+`git clone git@github.com:<ВАШ_GITHUB>/avito_pars.git`
 2. Установите зависимости.  
-'pip install -r requirements.txt'
+`pip install -r requirements.txt`
 3. Пропишите токены профиля Avito, вашего бота Telegram, ID чата, куда бот должен направлять сообщение об обновлениях, а также интересующие вас запросы к Avito и время между проверками.
-4. Запустите скрипт avito_parser.py.  
-'python avito_parser.py'
+4. Запустите скрипт.  
+`python avito_parser.py`
 
 ## Автор:
 Кирилишин Алексей
