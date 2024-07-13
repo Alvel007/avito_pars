@@ -20,9 +20,9 @@ avito_token = ''
 #  ID вашего чата с тг-ботом
 chat_id = ''
 #  Список интересных запросов (список любой длины)
-key_phrase = ['ЗАПРОС1', 'ЗАПРОС2',] #  и т.д.
+key_phrase = ['ЗАПРОС1', 'ЗАПРОС2', 'ЗАПРОС3',]
 #  Время между обновлениями линка чекером (в мин.)
-check_time = 5
+check_time = 10
 #  ----------------------------------
 
 
@@ -52,7 +52,7 @@ def extract_data_from_blocks(page_content):
         item_id = block.get('data-item-id')
         title = html.unescape(
             block.find('a', class_='iva-item-sliderLink-uLz1v')['title'])
-        link = (f'https://www.avito.ru/'
+        link = (f'https://www.avito.ru'
                 f'{block.find("a",
                               class_="iva-item-sliderLink-uLz1v")["href"]}')
         title_cleaned = re.sub(r'[^\w\s]', '', title)[11:45] + '...' \
